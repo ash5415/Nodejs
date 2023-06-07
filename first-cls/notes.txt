@@ -1,0 +1,91 @@
+                                  nodejs
+                            ===================
+==> client server architecture is a computing model, where the servers hosts, distributes he controls the 
+
+    resources as well as services to be used by the client.
+
+==> such structural designs are made up of one or more client systems connected to main servers through the 
+   
+    a network.
+
+front end development:
+=======================
+
+==> front end development is associated with management of everything that users visually see first in their
+
+    browser or application.
+
+==> components of front end (html, js, css)
+
+==> html to define the content of the webpage.
+
+==> css to specify the layout of webpages.
+
+==> javascript to program the behavior of webpages.
+
+Back end development:
+=====================
+
+==> Back end development refers to the server side an application, where you have to develop a business logic 
+
+    to manage the content, security and structure, in order to ensure that application remain operational.
+
+Module :
+========
+
+==> module is a functionality which is organized in a single or multiple javascript files and can be reused 
+
+    throughout the nodejs application.
+
+==> there are 3 types of modules is there :
+
+      core modules: 
+      ============= 
+             ==> these are the models which are inbuilt and you can be used without any installation.
+
+    node package manager:
+    =====================
+              ==> these include a group of modules or packages, developed  by other developers, which can be 
+
+                  used in your application.
+
+    user defined models:
+    ====================
+
+            ==> these are the modules which are created by you, which you want to use rest of your application.
+
+Types of modules :
+==================
+
+fs model: 
+=========
+              ==> it handle the file system module.
+
+path :
+======
+              ==> it handles the file path.
+
+buffer :
+========
+            ==> it handles the binary data.
+
+http :
+======
+          ==> it males nodejs act as an server.
+
+url:
+=====
+
+         ==> it parses the url strings.
+
+util :
+======
+ 
+        ==> it is used to access the utility module.
+
+os :
+====
+       ==> it gets information about os.
+
+
+
