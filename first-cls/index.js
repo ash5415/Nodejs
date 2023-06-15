@@ -1,5 +1,5 @@
 const operatingSystem= require('os');
-// file system
+// file system // 
 const fs = require("fs");
 //const { error } = require('console');
 
@@ -8,6 +8,7 @@ console.log("Architecture:" + operatingSystem.arch());
 console.log("Release :" + operatingSystem.release());
 
 console.log("platform :" + operatingSystem.platform());
+
 fs.writeFileSync("test.txt" ,"welcome to the nodejs", (error)=>{
     if(error){
         console.log("file created successfully :" + error)

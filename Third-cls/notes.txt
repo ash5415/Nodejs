@@ -1,0 +1,98 @@
+                              File System modules
+                        =================================
+
+command line arguments:
+------------------------
+     --> you can receive inputs from a user via command line arguments in nodejs application.
+
+     --> arguments are data or value that are passed to your nodejs application via command prompt...
+
+     --> process.argv property returns an array containing arguments passed by user...
+
+yargs:
+-------
+
+==> yargs helps to build interactive command line tools, by passing arguments and generating an elegant interface.
+
+file system module:
+==================
+ 
+ ==> file system is a method of organizing and retrieving files from a storage medium, such as hard drive.
+
+ ==> the nodejs file system module allows you to work with the file system in your computer...
+
+ ==> to include file system module in your application, use the require () method ..
+
+ ==> every method in the file System has synchronous and asynchronous form...
+
+ synchronous form:
+ ==================
+     
+     ==> it blocks the execution of next line in program and waits till the task associated with file is completed... 
+
+     ==> it uses sync keyword.
+
+     ==> least preferred due to blocking.
+
+Asynchronous:
+==============
+
+==> it does't block the execution of program and executes the program without waiting for the completion of task
+
+    associated with the file.
+
+==> it uses the callback function.
+
+==> most preferred way due to non-blocking.
+
+   they are several file system operations are there :
+
+      1. open    2. get  3. write    4. read  5. append    6. rename   7. delete
+
+open file :
+===========
+             --> it is used to open any existing file...
+
+               syntax:
+                             fs.open(path, flags, mode, callback)
+get file :
+===========
+
+==> it is used to get the information related to the file.
+
+       syntax:
+                  fs.stat('file path'. callback)
+
+write file:
+==========
+               ==> it is ued to write the data into specific file...
+
+                syntax:
+
+                     fs.writeFile("filename",(callback))
+
+Read file:
+==========
+
+==> this method uses a file descriptor to read the file. it is used to read the data in to the specific file...
+
+    syntax:
+              fs.readFile("fileName",(callback));
+
+Rename file:
+=============
+
+==> it is used when you want to change the file name....
+
+     syntax:
+              fs.rename(fileName, newName, (callback))
+
+Append file:
+============
+           ==> it isd used to add new data to the file while maintaining the previous data...
+
+            syntax:
+
+                 fs.appendFile(fileName, (add data to the file), (callback))
+
+
