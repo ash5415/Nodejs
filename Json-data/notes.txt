@@ -1,0 +1,51 @@
+                                          Json data
+                                        ==============
+
+==>    Json data   convert to string 
+ 
+              syntax:             
+                      Json.stringify(jsonData)
+
+==> string convert to json format 
+
+          syntax:  json.parse(string)
+
+
+express in nodejs:
+==================
+
+==> express it is a web frame work ..
+
+==> it act as a middle ware in nodejs...
+
+   npm i express --save
+
+
+   Routing table using in express:
+   ===============================
+
+      ==> app.method(path, handler)
+
+express in nodejs:
+==================
+
+==> express is a  web frame work in nodejs which behave like a middleware to help manages servers and routes.
+
+==> web frame work is used to perform the tasks of accepting a http request from browser and send back html 
+
+    response from a server to browser.
+
+==> express application uses a call back function whose parameters are request and response objects.
+
+==> the request object represents the http request made by any browser...
+
+==> the response object represents the http response sent by express when its gets an http request..
+
+==> it permits set up middleware in order to response http request.
+
+==> it is used to routing table which performs the different actions based on the URL...
+
+==> it permits to render the html page by passing arguments to templates...
+
+==> any client establish a connection with server via URL...
+

@@ -1,0 +1,22 @@
+[
+    {
+        "name":"iphone",
+        "price":"$2000"
+    },
+    {
+        "name":"iwatch",
+        "price":"$3000"
+    },
+    {
+        "name":"imac",
+        "price":"$4000"
+    },
+    {
+        "name":"ipod",
+        "price":"$5000"
+    },
+    {
+        "name":"ipad",
+        "price":"$6000"
+    }
+]
