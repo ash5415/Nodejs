@@ -1,0 +1,202 @@
+                             Async programming
+                        ============================
+
+==> call stack
+
+==> call backs, call back queue and event loop
+
+==> call back abstraction
+
+==> call back chaining
+
+==> promises
+
+==> promises chaining
+
+==> request package
+
+==> customizing http requests
+
+==> error handling with appropriate http codes
+
+==> EJS template 
+
+call stack:
+==========
+
+==> call bac ka is a data structure thar uses the last in first out (LIFO);
+==> anonymous function is a function which has no name and gets invoked automatically...
+
+       const list = (names) =>{
+        names.forEach((name) =>{
+          console.log(name)
+        })
+       }
+
+       const users=['ash','mike'];
+
+       list(users);
+
+call back :
+==========
+
+==> a function passed to another function as an argument.
+
+    example :
+
+        function(a,b){
+            const add = a+ba
+               return add
+        } 
+        const output =(10,20);
+
+        console.log(output);
+         
+         function sum(a,b,cb){
+            setTimeout(()=>{
+                const add =a +b;
+                  cb =add;
+            },2000);
+         }
+
+         function print(sum(s)){
+
+         console.log(s);
+         };
+
+         const result =sum(10,20,print);
+
+callback queue:
+===============
+
+==> maintains a list of callback functions that are ready to be executed....
+
+Event loop:
+===========
+
+==> event loop ensures the the execution of the callback after the call stack gets empty....
+
+nodejs Async working:
+==================== 
+
+        example:
+
+                console.log(`welcome to the edureka!!!!!!`);
+
+                setTimeout(()=>{
+                    console.log(`executed after 1o seconds!!!!!!`);
+                },10000);
+
+                setTimeout(()=>{
+                    console.log(`executed after 5 seconds!!!!!!`);
+                },5000);
+
+                setTimeout(()=>{
+                    console.log(`executed after 4 seconds!!!!!!`);
+                },4000);
+                setTimeout(()=>{
+                    console.log(`executed after 0 seconds!!!!!!`);
+                },0);
+
+
+callback abstraction:
+======================
+
+==> it is the process of reusing the code......
+
+    example:
+
+          const sum=(a,b)=>{
+            cb(a+b);
+          }
+          sum(10,20,(result)=>{
+            console.log("the result of :" + result);
+          });
+          sum(20,20,(result)=>{
+            console.log("the result of :" + result);
+          })
+
+
+callback chaining:
+==================
+==> callback chaining is a process of chain one callback function inside another callback function...
+
+const delay = (seconds,cb)=>{
+      setTimeout(cd, seconds);
+};
+
+   delay(2000,()=>{
+        console.log(`printed after 2 seconds`);
+
+        delay(3000,()=>{
+               console.log(`printed after 3 seconds`);
+        });
+
+        delay(4000,()=>{
+            console.log(`printed after 4 seconds`)
+        });
+
+   });
+
+   promises:
+   =========
+
+   ==> promises are in 3 states 
+      
+        1. fulfilled          2.rejected            3.pending   4.settled
+
+  example:
+                 const prom =new promises((resolve,rejected)=>{
+                    const isLoggedIn = true;
+                    setTimeout(()=>{
+                         if(isLoggedIn){
+                            resolve({username:"edureka"}){
+                                else{
+                                    rejected(error)
+                                }
+                            }
+                         }
+                    },5000)
+                 })
+                 
+                prom.then((result)=>{
+                    console.log(result)
+                }).catch((error)=>{
+                    console.log(error)
+                }).finally(()=>{
+                    console.log("promises settled")
+                });
+
+EJS template:
+==============
+
+==> template engine is a tool to write the html pages, by defining tags or syntax that will either insert the
+
+     variable in to the final output of the template or run some logic at runtime before sending the final html
+
+     to the browser for display...
+
+Advantages:
+===========
+
+==> improves developers productivity...
+
+==> improves readability and maintainability....
+
+==> maximizes the client side processing....
+
+==> single template for multiple pages...
+
+ejs:
+====
+
+==> ejs is a simple template engine that lets its user generate html with plain javascript.....
+
+==> the main reason to go ejs is that, it makes easy to generate dynamic content or real time updates by using 
+
+    partial view...
+
+    example:
+
+              --> common header , footer, menu etc......
+
