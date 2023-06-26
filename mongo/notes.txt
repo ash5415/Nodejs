@@ -1,0 +1,90 @@
+                               Integration with mongodb and email servers
+                            =================================================
+Data base:
+===========
+
+==> data base is a store,organize and manage large amounts of data on a single platform....
+
+==> promote a disciplined approach to data management.....
+
+==> facilitate a well-planned for data analysis....
+
+==> it is a best solution to manage security, multiuse access control,backup and recovery.....
+
+==> data base is a organized collection of data or information so that it can be easily accessed,updated or 
+
+    manipulated....
+
+==> DBMS is a simple software system that is used to define, update, retrieve and manage data in a data base...
+
+==> the majorly used DBMS are relational data base management system and NOsql data base management system...
+
+==> example of some of the DBMS management software are microsoft access,MySQL, oracle, mongodb etc.....
+
+        data is classified in to 2 types 
+
+          1. structured data        2. non structured data 
+
+structured data:
+================
+
+==> structured data which os stored in the form of rows and columns.....
+
+==> data is store in the tables using the rows and columns.....
+
+==> SQL : structured query language...
+
+==> sql data bases:
+
+       example: MySQL, MS SQL server, DB2,mariaDB, postgreSQL etc........
+
+==> as the size of the data grows, the performance of these data bases goes down.
+
+==> you can create the relation between the tables
+   
+example:
+
+                  Roll No  |   Name      |    Class     |     City
+            -------------------------------------------------------------
+                   1       |   Ashok     |      9       |      guntur
+
+                   2       |   Ash       |      8       |      melbourne
+
+                   3       |  prasad     |     10       |      sydney
+
+Non-structured data:
+====================
+
+==> data stored in the form of key value pairs....
+
+==> No SQL data base
+
+example:
+          MongoDb, Radis, couch db etc.....
+
+
+
+        {
+            "rollno" : 1,
+
+            "name"   :ashok,
+
+            "class"  " 12
+          },
+        {
+            "rollno" : 2,
+
+            "name"   :ash,
+
+            "class"  " 10
+        }
+
+CRUD operations in MongoDb:
+===========================
+
+          C ==> create    command:   db.collection.insert()
+          R ==> Read      command:   db.collection.find()
+          U ==> update    command:   db.collection.update()
+          D ==> delete    command:    db.collection.remove()
+
+==> to use or create any database use "use <database name>"
