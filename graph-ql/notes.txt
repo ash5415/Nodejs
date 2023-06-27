@@ -1,0 +1,62 @@
+                                   Graphql
+                            ===================
+
+===> Graphql is a query language for API's and server side run time for executing the queries.
+
+===> it is also know as a syntax that describes how to ask for remote data.
+
+===> it is originally designed to support clients requesting data from a sever.
+
+===> it use a type system to define the data .
+
+===> it is an alternative of REST architecture.
+
+===> here we write queries an object type.
+
+cons  of REST API:
+==================
+ 
+    ===> REST API requires multiple round tips to fetch related resources.
+
+    ===> it often leads to under fetching (not giving everything one go) or over fetching (getting more that 
+         what is need in one go).
+     
+    ===> as the application grows bigger the number of endpoints that are require can also increase and make 
+
+         the code maintenance much harder.
+
+Graphql:
+
+    ===> query responses are decided by the client rather than the server. a Graphql query returns exactly
+
+         what a client asks for and nothing more.
+
+    ===> A Graphql query can be ensured to be valid with in a Graphql type system at development time allowing
+
+         the server to make guarantees about the responses.
+    
+    ===> Graphql has single endpoint.
+
+    FE and BE communication using Graphql:
+==========================================
+
+   ===> the web server build on nodejs and express frame work.
+
+   ===> A request is made to the Graphql server by react application (built using apollo client library) or
+
+        Graphql browser application.
+
+    ===> the query will be parsed and validated against defined schema.
+    
+    ===> if the request schema passes the validation, then the associated resolver function will be executed.
+
+    ===> the resolver will contain code to fetch the dat from anAPI or a database.
+
+Graphql type system:
+=====================
+
+===> query means when you want to get the data. (GET)
+
+===> mutation means : when you want update ,delete, add (put, post delete)
+
+===> both the things are provide the Graphql schema.
