@@ -1,0 +1,63 @@
+                                  REST API'S
+                            ========================
+
+==> APi (application program interface) are the access point of the application to communicate with other 
+
+   application in a agreed way....
+
+==> REST (representational state transfer) is a API that allows you to access or manipulate the resource using
+
+    a set of predefined operations  through http protocol methods...
+
+==> REst applications are used in most of the applications as the request bases on the universal HTTP protocol......
+
+    and returns the data in JSON format which most of the programming languages...
+
+Representational state transfer:
+================================
+
+==> it means that we can work on the representation of the data....
+
+   example:
+   ========
+              --> the data stored on the data base but with the help of REST API's we can fetch, update amd delete
+
+                  the data through your application in your server.....
+
+State transfer:
+===============
+
+==> it means that the state has been transfer from server to client as the server does not stored any state
+
+    about the client session.....
+
+example:
+         ==> a request must contain all the details required to process the request, the server just process the
+
+             request and return the results but it does not store any state of the client session.......
+
+HTTP methods:
+=============
+
+              Create  : post 
+
+              Read    : Get
+               
+              Update  : Update
+  
+              Delete  : Delete
+
+
+==> using postman application for testing the APi
+
+==> postman is a application for testing API's by sending request to the web server and getting the response
+
+    back.....
+
+==> it goal is to test out REST API without client....
+
+==> provide collection API'S
+
+==> allow use to give header, body and many more of the API excepts and check the response....
+
+
