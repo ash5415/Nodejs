@@ -1,0 +1,107 @@
+                               JWT
+                            =========
+
+       ==> Authentication
+
+       ==> types of Authentication
+
+       ==> session vs token
+
+       ==> json web token
+
+       ==> Bcrypt
+
+       ==> node-local storage
+
+
+Authentication:
+===============
+ => Authentication is a process by which the identity of the entity seeking access to information kept on the 
+
+    server is verified ....
+
+==> basic Authentication requires only user name and password to form a single value and passes that along 
+
+    with HTTP heder called Authentication....
+
+==> server looks the Authentication header and compares if it match, it fulfill the requires if not, it send 
+
+    the status 401.....
+
+==> Authentication verifies whether are you the person who you saying....
+
+==> Authorization decides what permissions you have such as read,write,update and delete.....
+
+
+            ==> types of Authentication
+
+               1.session based Authentication
+
+               2. token based Authentication
+
+session based Authentication:
+=============================
+
+==> sever will create a session for the user after the user logs in ....
+
+==> session id is stored on the cookie in the user's browser...
+
+==> while the user stays logged in, the cookie would be sent along with every subsequent request....
+
+==> server will compares the session id in the cookie against the one which is in the memory to verify user'
+
+    identity and sends response with the state....
+scalability:
+============
+
+==> sessions are stored in the servers memory, scaling becomes an issue when there are many users using the 
+
+    system at once....
+
+Token based authentication:
+===========================
+
+==> most odf the application using json web token......
+
+==> server create the JWT with a secret and sends the JWT to the client
+
+==> client store the jwt in the local system and includes jwt in the header with every request....
+
+==> server validate the JWT with every request from the client and sends response.....
+
+scalability:
+============
+
+==> there is no issue with scaling because token is stored in the client side....
+
+JWT:
+====
+
+JWT contains 3 parts 
+
+   1. header
+
+   2. payload
+
+   3.signature
+
+   website: JWT.IO
+
+Header:
+=======
+
+==> it contains information about the JWT signature should be computed.
+
+==> where "TYP" specifies that the object is a JWT
+
+==> "alg" key specifies the algorithm used create the signature....
+
+payload:
+========
+     
+==> it consists the data to be transferred and some special attributes like iss,sub,aud,exp and some other
+
+signature:
+==========
+
+==> the encoded header and payload using "mnjlnjknvnknkjvnkjnkjvn"
