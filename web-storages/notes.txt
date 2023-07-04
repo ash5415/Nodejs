@@ -1,0 +1,47 @@
+                                       web-storages
+                                    =================
+==> data stored locally in a user's browser is called web storage, which can be accessed by the server.
+
+==> web storages are 2 types
+
+    1. local storage
+
+    2. session storage
+
+
+local storage:
+==============
+==> there would be no expiration of data, as the data will be persist even after the browser is closed...
+
+==> local storage size 25 mb
+
+==> data store in key value pairs.
+
+==> it stays forever until clear them 
+
+==> format the computer.
+
+
+session storage:
+================
+==> the data gets cleared after the browser is closed...
+
+==> session storage size in 5 mb
+
+==> data stored in key value pairs
+
+==> it gets cleared if you close tab or browser.
+
+==> it can survive a browser refresh....
+
+Node-localstorage:
+===================
+
+==> To access the web storage form the server side make sure of a package called node-localstorage which allows
+
+    website to store and access the data in the browser with no expiration date, data stored in storage gets 
+
+    cleared when the page session ends.....
+  
+       package:  npm i node-localstorage --save
+
