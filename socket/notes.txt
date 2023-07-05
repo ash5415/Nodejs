@@ -1,0 +1,39 @@
+                                       Socket.io
+                                    ===============
+
+Half-duplex communication:
+==========================
+
+==> Http is the protocol which allows communication between client and  the server .....
+
+==>it supports half-duplex communication, means it allows only one direction flow of traffic at a time....
+
+==> hence the client sends the request to the server (one direction) then the server responds back to the
+
+    client.....
+
+web Socket:
+===========
+
+==> Half duplex communication setup-http protocol is not suitable for chat application....
+
+==> this drawback is overcome by the web-Socket protocol which permits full-duplex communication....
+
+==> full-duplex communication means both client and server can communicate and exchange the data at the same 
+
+    time......
+
+==> web Socket sets persistent connection between client and the server......
+
+    example:
+              what's up,  sports application, stock application etc.......
+
+==> socket.io is a library that enables real-time, bidirectional and event-based communication between client 
+
+    and server...
+
+==> it supports wide range of web browsers include old crufty browsers....
+
+==> it consists of a nodejs server and a javascript client library for browser....
+
+    package:                npm install socket.io 
