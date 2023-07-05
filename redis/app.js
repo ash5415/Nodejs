@@ -14,14 +14,17 @@ const client =redis.createClient({
 client.set('userVisits',0);
 
 app.get('/getVisits',(req,resp)=>{
-    const userVisits=data;
+    client.get('userVisits',(error,data)=>{
+        const userVisits = data;
 
-    const currentVisits=data+1;
-
-    client.set('userVisits',currentVisits);
-    resp.send(200).json({
-        result:'successfully getting the user counts!!!!!!'
-    });
+        const currentVisits = data+1;
+    
+        client.set('userVisits',currentVisits);
+        resp.send(200).json({
+            result:'successfully getting the user counts!!!!!!'
+        });
+    })
+    
 })
 
 app.listen(port,()=>{
