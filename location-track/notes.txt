@@ -1,0 +1,25 @@
+                                 Location tracking
+                            ===========================
+
+public-ip:
+==========
+
+==> it is used to determine the ip address of the device....
+
+        command: npm i public-ip
+
+node-iplocate:
+==============
+
+==> it is used to determine the geographic location of the ip address....
+
+          command: npm i node-iplocate
+
+node-localstorage:
+==================
+
+==> it is a web storage that allows javascript apps to store and access data in the browser with no expiration
+
+    date....
+
+        command: node-localstorage
