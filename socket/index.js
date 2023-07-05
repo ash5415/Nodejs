@@ -6,6 +6,10 @@ const port =3000;
 
 const bodyParser=require('body-Parser');
 
+const cors= require('cors');
+
+app.use(cors());
+
 app.use(bodyParser.json());
 
 // trigger the notification api
