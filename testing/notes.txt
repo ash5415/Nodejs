@@ -1,0 +1,128 @@
+                                       testing
+                                    =============
+
+Automated testing:
+==================
+
+==> Automated testing is the technique used to test and compare the actual outcome with the excepted outcome, 
+
+    where new information is continuously fed back into the process...
+
+    Benefits:
+    =========
+
+          ==> reduce the maintenance cost...
+
+          ==> improve accuracy....
+
+          ==> increase speed of test execution....
+
+          ==> write the test case once and run as many times you want....
+
+          ==> minimise the human interaction with testing.....
+
+          ==> save time and money....
+
+there are 3 types of testing 
+
+         1. unit testing 
+
+         2. functional testing
+
+         3.integration testing  
+
+unit testing:
+=============
+
+==> unit testing is used to tes the small pieces of independent code, unconcerned with how those codes are 
+
+    wrapped into your application.....
+
+==> your code cannot contain external resources like network or databases.....
+
+==> used to prevent regression   (bugs that occurs repeatedly)
+
+==> easy to pinpoint and then fix the problem...
+
+==> if it takes longer time to execute, it is likely that the code under test is much more complex than it should
+
+    be ....
+
+==> popular tool for unit testing include mocha.....
+
+
+function testing:
+===================
+
+==> functional testing are made against combination of many units....
+
+==> you can use many number of external objects or systems like databases, ui, security and other application
+
+    layers...
+
+==> take longer time to execute than unit test.....
+
+==> functionality change represents major releases whereas unit test represents only minor changes, due to which
+
+    they are excepted to change less often than unit test...
+
+==> where user enter username and password and click on send, that user will be logged in. we can easily see 
+
+    that this functional group will comprise of many unit tests, one for validating username, one for handling
+
+    a button click and so on.....
+
+integration testing:
+====================
+
+==> integration testing ensures that the entire system application is working correctly.....
+
+==> it can be executed only with in a realistic environment like a real databases, servers, and other systems
+
+    which is like target production environment.....
+
+==> it is used incase you need to test separate systems like databases and application...
+
+==> it is slower than other tests as it is complex to write....
+
+==> the global accessible console.log is commonly used for testing and debugging...
+
+==> it provides a quick way to see what is happening at same point in a script.....
+
+mocha:
+=======
+
+==> mocha is the javascript frame work test runner that runs on nodejs as well as browser. it does not concern itself
+
+    with test assertions themselves....
+    
+        syntax:     npm i mocha -g
+
+==> mocha uses 'describe' and 'it' operators to organize and run your test..
+
+==> mocha is used to run sync as well as async code....
+
+chai:
+=====
+
+==> chai is a BDD and  TDD assertions library for node and the browser, offering assertion styles
+     
+           except, should and assert..
+
+BDD:   (behavior driven development)
+==== 
+
+==> this is mostly depends on the end user and quality team...
+
+==> designing application from en user stand point....
+
+==> more focus on the functionality.....
+
+TDD:    (test driven development)
+====
+
+==> it is a development practice more close to the developer....
+
+==> the development is done to satisfy the test cases...
+
+==> close to the developer stand point ....

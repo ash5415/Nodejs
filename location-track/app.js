@@ -10,9 +10,9 @@ const publicIp= require('public-ip');
 
 app.get('/track-ip',(req,resp)=>{
     publicIp.v4().then(ip =>{
-        nodeIpLocate(ip).then(resp =>{
+        nodeIpLocate(ip).then(results =>{
             resp.status(200).json({
-                result:'successfully tracked ip results'
+                results:'successfully tracked ip results'
             });
         }).catch(error =>{
             resp.status(500).json({
